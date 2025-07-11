@@ -12,12 +12,6 @@ dependencies:
   galaxy: |
     ---
     collections:
-      - name: awx.awx
-      - name: azure.azcollection
-        version: ">=2.1.0"
-      - name: amazon.aws
-      - name: theforeman.foreman
-      - name: google.cloud
       - name: openstack.cloud
       - name: community.vmware
       - name: ovirt.ovirt
@@ -31,8 +25,6 @@ dependencies:
     python3.11 [platform:rpm]
     python3.11-devel [platform:rpm compile]
     libcurl-devel [platform:rpm compile]
-    krb5-devel [platform:rpm compile]
-    krb5-workstation [platform:rpm]
     subversion [platform:rpm]
     subversion [platform:dpkg]
     git-lfs [platform:rpm]
@@ -50,11 +42,7 @@ dependencies:
   python: |
     git+https://github.com/ansible/ansible-sign
     ncclient
-    paramiko
-    pykerberos
     pyOpenSSL
-    pypsrp[kerberos,credssp]
-    pywinrm[kerberos,credssp]
     toml
     pexpect>=4.5
     python-daemon
